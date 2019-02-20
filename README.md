@@ -1,7 +1,5 @@
-## Evolve your Spring-Boot application with Liquibase [![Build Status](https://travis-ci.org/toantonthat/spring-boot-liquibase.svg?branch=master)](https://travis-ci.org/toantonthat/spring-boot-liquibase)
-
 ### Blog
-https://www.baeldung.com/liquibase-refactor-schema-of-java-app
+https://javadeveloperzone.com/spring-boot/spring-boot-liquibase-example/
 
 ### How to run?
 clone the codebase
@@ -17,7 +15,9 @@ mvn spring-boot:run
 Mysql configuration 
   
 `JDBC URL`: jdbc:mysql://localhost:3306/liquibase?useSSL=false
+
 `User Name`: root  
+
 `Password`: Leave it blank
 
  
