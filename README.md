@@ -1,17 +1,12 @@
-## Evolve your Spring-Boot application with Liquibase [![Build Status](https://travis-ci.org/hhimanshu/spring-boot-liquibase.svg?branch=master)](https://travis-ci.org/hhimanshu/spring-boot-liquibase)
+## Evolve your Spring-Boot application with Liquibase [![Build Status](https://travis-ci.org/toantonthat/spring-boot-liquibase.svg?branch=master)](https://travis-ci.org/toantonthat/spring-boot-liquibase)
 
 ### Blog
-https://medium.com/@harittweets/evolving-your-database-using-spring-boot-and-liquibase-844fcd7931da
+https://www.baeldung.com/liquibase-refactor-schema-of-java-app
 
 ### How to run?
 clone the codebase
 ```bash
-git clone git@github.com:hhimanshu/spring-boot-liquibase.git
-```
-
-compile, test, package
-```bash
-mvn clean package
+git clone https://github.com/toantonthat/spring-boot-liquibase.git
 ```
 
 run
@@ -19,12 +14,10 @@ run
 mvn spring-boot:run
 ```
 
-Go to http://localhost:8080/h2-console  
+Mysql configuration 
   
-`JDBC URL`: jdbc:h2:mem:testdb  
-`User Name`: sa  
+`JDBC URL`: jdbc:mysql://localhost:3306/liquibase?useSSL=false
+`User Name`: root  
 `Password`: Leave it blank
-
-Now you have the access of in-memory `H2` database dashboard.
 
  
