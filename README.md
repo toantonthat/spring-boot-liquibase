@@ -1,4 +1,3 @@
-
 ### Blog
 https://www.baeldung.com/liquibase-refactor-schema-of-java-app
 
@@ -16,7 +15,9 @@ mvn spring-boot:run
 Mysql configuration 
   
 `JDBC URL`: jdbc:mysql://localhost:3306/liquibase?useSSL=false
+```
 `User Name`: root  
+```
 `Password`: Leave it blank
 
  
