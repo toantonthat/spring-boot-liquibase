@@ -1,5 +1,5 @@
 ### Blog
-https://www.baeldung.com/liquibase-refactor-schema-of-java-app
+https://javadeveloperzone.com/spring-boot/spring-boot-liquibase-example/
 
 ### How to run?
 clone the codebase
