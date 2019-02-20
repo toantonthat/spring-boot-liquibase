@@ -1,4 +1,3 @@
-## Evolve your Spring-Boot application with Liquibase [![Build Status](https://travis-ci.org/toantonthat/spring-boot-liquibase.svg?branch=master)](https://travis-ci.org/toantonthat/spring-boot-liquibase)
 
 ### Blog
 https://www.baeldung.com/liquibase-refactor-schema-of-java-app
