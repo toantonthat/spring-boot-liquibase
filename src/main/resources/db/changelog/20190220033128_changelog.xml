@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="toantt (generated)" id="1550633490978-1">
+        <addColumn tableName="authors">
+            <column name="gioi_tinh" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="toantt (generated)" id="1550633490978-2">
+        <addColumn tableName="authors">
+            <column name="ngay_sinh" type="datetime"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="toantt (generated)" id="1550633490978-3">
+        <addColumn tableName="category">
+            <column name="parent_id" type="integer">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="toantt (generated)" id="1550633490978-4">
+        <addUniqueConstraint columnNames="gioi_tinh" constraintName="UC_AUTHORSGIOI_TINH_COL" tableName="authors"/>
+    </changeSet>
+    <changeSet author="toantt (generated)" id="1550633490978-5">
+        <addUniqueConstraint columnNames="name" constraintName="UC_AUTHORSNAME_COL" tableName="authors"/>
+    </changeSet>
+    <changeSet author="toantt (generated)" id="1550633490978-6">
+        <addUniqueConstraint columnNames="name" constraintName="UC_CATEGORYNAME_COL" tableName="category"/>
+    </changeSet>
+    <changeSet author="toantt (generated)" id="1550633490978-7">
+        <dropUniqueConstraint constraintName="id" tableName="books"/>
+    </changeSet>
+    <changeSet author="toantt (generated)" id="1550633490978-8">
+        <dropTable tableName="hibernate_sequence"/>
+    </changeSet>
+    <changeSet author="toantt (generated)" id="1550633490978-9">
+        <dropNotNullConstraint columnDataType="int" columnName="author" tableName="books"/>
+    </changeSet>
+</databaseChangeLog>
