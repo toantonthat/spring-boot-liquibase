@@ -21,34 +21,9 @@ public class Author {
 	private String name;
 
 	@Column(nullable = false, unique = true)
-	private String gioiTinh;
+	private String gender;
 
-	private Date ngaySinh;
-
-	public Date getNgaySinh() {
-		return ngaySinh;
-	}
-
-	public void setNgaySinh(Date ngaySinh) {
-		this.ngaySinh = ngaySinh;
-	}
-
-	public String getGioiTinh() {
-		return gioiTinh;
-	}
-
-	public void setGioiTinh(String gioiTinh) {
-		this.gioiTinh = gioiTinh;
-	}
-
-	protected Author() {
-		// for JPA
-	}
-
-	public Author(Integer id, String name) {
-		this.id = id;
-		this.name = name;
-	}
+	private Date dateOfBirth;
 
 	public Integer getId() {
 		return id;
@@ -56,6 +31,30 @@ public class Author {
 
 	public String getName() {
 		return name;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
 	}
 
 	@Override
